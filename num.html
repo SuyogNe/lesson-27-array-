@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>MAP</h1>
+    <p id="para1"></p>
+    <p id="p2"></p>
+    <script>
+        var numb=[4,14,24,34,44,54,64,74];
+        document.getElementById("p2").innerHTML=numb;
+        function myfun(num)
+        {
+            return num*10;
+        }
+        var newnumbers=numb.map(myfun);
+        document.getElementById("para1").innerHTML=newnumbers;
+    </script>
+</body>
+</html>
